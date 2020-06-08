@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::post('/add_page', 'AddFile');
+Route::get('/list_pages', 'PagesController@index')->name('pages');
