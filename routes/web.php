@@ -18,4 +18,5 @@ Route::get('/', function () {
 });
 Route::post('/add_page', 'PagesController@store')->name('add');
 Route::get('/list_pages', 'PagesController@getPages')->name('list');
+Route::get('/retrieve_page', 'PagesController@retrievePage')->name('page');
 
