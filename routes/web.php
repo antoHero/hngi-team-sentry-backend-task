@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/add_page', 'PagesController@store')->name('add');
+Route::get('/list_pages', 'PagesController@getPages')->name('list');
 
