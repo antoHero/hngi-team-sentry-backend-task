@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::post('/add_page', 'AddFile');
-Route::get('/list_pages', 'PagesController@index')->name('pages');
+
+//endpoint to add page
+Route::post('/add_page', 'AddPageController')->name('add');
+//endpoint to list pages
+Route::get('/list_pages', 'ListPagesController')->name('list');
+//endpoint to retrieve a page html
+Route::get('/retrieve_page', 'RetrieveHTMLController')->name('page');
+

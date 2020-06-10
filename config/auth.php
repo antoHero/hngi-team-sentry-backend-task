@@ -70,6 +70,10 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
+        'page' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Page::class,
+        ],
 
         // 'users' => [
         //     'driver' => 'database',
